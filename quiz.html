@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <nav class="quiz-nav">
+        <h1 class="heading">Learnify</h1>
+        <a href="courses.html">Back to Courses</a>
+    </nav>
+    <br><br>
+    <div class="table-heading-h1">
+        <h1 class="actual-table-heading-h1">Which Subject do you Want to Take Quiz on?</h1>
+    </div>
+    <br><br><br><br><br>
+    <table class="subject-quiz-table">
+        <tr>
+            <th>Subject</th>
+            <th>Link to Each Subject's Quiz</th>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td><a href="mathematics-quiz.html">Mathematics Quiz</a></td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td><a href="science-quiz.html">Science Quiz</a></td>
+        </tr>
+        <tr>
+            <td>Social Science</td>
+            <td><a href="social-science-quiz.html">Social Science Quiz</a></td>
+        </tr>
+    </table>
+    <br><br><br><br>
+    <div class="marks-heading">
+        <h1 class="marks-heading-h1">Total Marks of the Quiz</h1>
+    </div>
+    <br><br><br><br>
+    <table class="marks-table">
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td class="maths-marks">0/15</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td class="science-marks">0/15</td>
+        </tr>
+        <tr>
+            <td>Social Science</td>
+            <td class="social-science-marks">0/15</td>
+        </tr>
+    </table>
+    <div id="loader">
+        <div class="loading-content">
+            <lottie-player src="images/Loading.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <p>Learnifying...</p>
+        </div>
+   </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

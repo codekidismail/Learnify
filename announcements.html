@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="announcements.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <nav class="nav">
+        <h1 class="heading">Learnify</h1>
+        <a class="home" href="index.html">Home</a>
+        <a class="course" href="courses.html">Courses</a>
+        <a class="badge" href="badges.html">Badges</a>
+        <a class="announcements" href="announcements.html">Announcements</a>
+    </nav>
+    <h1 class="breaking-news">Latest Announcements:</h1>
+    <br><br>
+    <div class="actual-announcements">
+        <div class="ticker">
+            <p>1. PTM on January 1</p>
+            <p>2. Finish all the Courses in 1 Month!</p>
+            <p>3. Prepare for the new mixed quiz!</p>
+        </div>
+    </div>
+    <div id="loader">
+        <div class="loading-content">
+            <lottie-player src="images/Loading.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <p>Learnifying...</p>
+        </div>
+   </div>
+   <script src="announcements.js"></script>
+</body>
+</html>

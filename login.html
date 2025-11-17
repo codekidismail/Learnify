@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+    <title>Login</title>
+</head>
+<body>
+    <h1 class="head1">Login</h1>
+    <br>
+    <form class="log-form">
+        Username:     <input type="name" size="20" maxlength="9" placeholder="Username"><br><br><br><br>
+        Password:     <input type="password" size="20" maxlength="9" placeholder="Password"><br><br><br>
+        <br>
+        <a class="new-student-register-link" href="sign-up.html">New Student? Register here!</a>
+    </form>
+    <br><br><br><br>
+    <button class="log-button">Login</button>
+    <div id="loader">
+        <div class="loading-content">
+            <lottie-player src="images/Loading.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <p>Learnifying...</p>
+        </div>
+   </div>
+    <audio id="alertSound" src="audio/Alert.mp3" preload="auto"></audio>
+    <script src="login.js"></script>
+</body>
+</html>

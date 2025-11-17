@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Quiz | Social Science</title>
+    <link rel="stylesheet" href="social-science-quiz.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="container">
+        <form class="social-science-quiz">
+            <h1 class="main-heading">Social Science Quiz</h1>
+            <h2 class="section">Section A - Multiple Choice Questions</h2>
+            <div class="MCQ">
+                <p>1. What does the term “medieval” in history refer to?</p>
+                <input type="radio" name="q1" value="A period between ancient and modern ages"> a. A period between ancient and modern ages<br>
+                <input type="radio" name="q1" value="The age of industrialization"> b. The age of industrialization<br>
+                <input type="radio" name="q1" value="The period after the 19th century"> c. The period after the 19th century<br>
+                <input type="radio" name="q1" value="The prehistoric era"> d. The prehistoric era<br>
+                <br>
+                <p>2. Which dynasty established the Delhi Sultanate in 1206 CE?</p>
+                <input type="radio" name="q2" value="Khilji"> a. Khilji<br>
+                <input type="radio" name="q2" value="Mamluk"> b. Mamluk<br>
+                <input type="radio" name="q2" value="Tughlaq"> c. Tughlaq<br>
+                <input type="radio" name="q2" value="Lodi"> d. Lodi<br>
+                <br>
+                <p>3. Who among the following shifted his capital from Delhi to Daulatabad?</p>
+                <input type="radio" name="q3" value="Ala-ud-din Khilji"> a. Ala-ud-din Khilji<br>
+                <input type="radio" name="q3" value="Muhammad bin Tughlaq"> b. Muhammad bin Tughlaq<br>
+                <input type="radio" name="q3" value="Firoz Shah Tughlaq"> c. Firoz Shah Tughlaq<br>
+                <input type="radio" name="q3" value="Bahlol Lodi"> d. Bahlol Lodi<br>
+                <br>
+                <p>4. Which temple was built by Narasimhadeva I to commemorate his victory over the Sultanate forces?</p>
+                <input type="radio" name="q4" value="Jagannath Temple"> a. Jagannath Temple<br>
+                <input type="radio" name="q4" value="Konark Sun Temple"> b. Konark Sun Temple<br>
+                <input type="radio" name="q4" value="Meenakshi Temple"> c. Meenakshi Temple<br>
+                <input type="radio" name="q4" value="Brihadeeswara Temple"> d. Brihadeeswara Temple<br>
+                <br>
+                <p>5. The Hoysala dynasty ruled mainly over the region of:</p>
+                <input type="radio" name="q5" value="Tamil Nadu"> a. Tamil Nadu<br>
+                <input type="radio" name="q5" value="Kerala"> b. Kerala<br>
+                <input type="radio" name="q5" value="Karnataka"> c. Karnataka<br>
+                <input type="radio" name="q5" value="Gujarat"> d. Gujarat<br>
+                <br>
+            </div>
+            <h2 class="section">Section B - True or False</h2>
+            <div class="TOFQ">
+                <p>6. The Delhi Sultanate was ruled by five dynasties of Indian origin.</p>
+                <input type="radio" name="q6" value="True"> True
+                <input type="radio" name="q6" value="False"> False
+                <br>
+                <p>7. Muhammad bin Tughlaq introduced token currency.</p>
+                <input type="radio" name="q7" value="True"> True
+                <input type="radio" name="q7" value="False"> False
+                <br>
+                <p>8. Shivaji was defeated and captured by Aurangzeb in battle.</p>
+                <input type="radio" name="q8" value="True"> True
+                <input type="radio" name="q8" value="False"> False
+                <br>
+                <p>9. The Vijayanagara Empire rose as the Delhi Sultanate declined.</p>
+                <input type="radio" name="q9" value="True"> True
+                <input type="radio" name="q9" value="False"> False
+                <br>
+                <p>10. Narasimhadeva I built the famous Konark temple in Odisha.</p>
+                <input type="radio" name="q10" value="True"> True
+                <input type="radio" name="q10" value="False"> False
+                <br>
+            </div>
+            <h2 class="section">Section C - Fill in the blanks</h2>
+            <div class="FITBQ">
+                <p>11. The word “Sultanate” refers to the rule of a <input type="text" name="q11">.</p>
+                <br>
+                <p>12. The Konark Sun Temple was built to honor the Sun God by <input type="text" name="q12">.</p>
+                <br>
+                <p>13. Muhammad bin Tughlaq moved his capital from Delhi to <input type="text" name="q13">.</p>
+                <br>
+                <p>14. Shivaji’s idea of self-rule was called <input type="text" name="q14">.</p>
+                <br>
+                <p>15. The Maratha navy was first organized in the year <input type="text" name="q15">.</p>
+                <br>
+            </div>
+        </form>
+    </div>
+    <button class="submit-btn">Submit Quiz</button>
+    <audio id="alertSound" src="audio/Alert.mp3" preload="auto"></audio>
+    <audio id="quizTime" src="audio/Quiz.mp3" preload="auto" loop></audio>
+    <div id="loader">
+        <div class="loading-content">
+            <lottie-player src="images/Loading.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <p>Learnifying...</p>
+        </div>
+   </div>
+    <script src="social-science-quiz.js"></script>
+</body>
+</html>

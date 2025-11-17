@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Mathematics</title>
+    <link rel="stylesheet" href="mathematics.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <nav class="math-nav">
+        <h1 class="heading">Learnify</h1>
+        <a href="courses.html">Back to Courses</a>
+    </nav>
+    <div class="math-h1">
+        <h1 class="main-math-h1">Mathematics Courses</h1>
+    </div>
+    <br><br>
+    <table class="math-table">
+        <tr>
+            <th>Chapters</th>
+            <th>PDF</th>
+            <th>Complete Topic</th>
+        </tr>
+        <tr>
+            <td>Chapter 1: A Square And A Cube</td>
+            <td><a href="pdfs/hegp101.pdf" target="_blank">A Square And A Cube</a></td>
+            <td><button class="complete-topic-btn" data-subject="math">Complete Topic</button></td>
+        </tr>
+        <tr>
+            <td>Chapter 2: Power Play</td>
+            <td><a href="pdfs/hegp102.pdf" target="_blank">Power Play</a></td>
+            <td><button class="complete-topic-btn" data-subject="math">Complete Topic</button></td>
+        </tr>
+        <tr>
+            <td>Chapter 3: A Story Of Numbers</td>
+            <td><a href="pdfs/hegp103.pdf" target="_blank">A Story Of Numbers</a></td>
+            <td><button class="complete-topic-btn" data-subject="math">Complete Topic</button></td>
+        </tr>
+        <tr>
+            <td>Chapter 4: Quadrilaterals</td>
+            <td><a href="pdfs/hegp104.pdf" target="_blank">Quadrilaterals</a></td>
+            <td><button class="complete-topic-btn" data-subject="math">Complete Topic</button></td>
+        </tr>
+
+    </table>
+    <audio id="alertSound" src="audio/Alert.mp3" preload="auto"></audio>
+    <div id="loader">
+        <div class="loading-content">
+            <lottie-player src="images/Loading.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <p>Learnifying...</p>
+        </div>
+   </div>
+    <script src="mathematics.js"></script>
+</body>
+
+</html>

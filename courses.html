@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="courses.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <nav class="nav">
+        <h1 class="heading">Learnify</h1>
+        <a class="home" href="index.html">Home</a>
+        <a class="course" href="courses.html">Courses</a>
+        <a class="badge" href="badges.html">Badges</a>
+        <a class="announcements" href="announcements.html">Announcements</a>
+    </nav>
+    <div class="head">
+        <h1 class="course-h1">Courses</h1>
+    </div>
+    <br><br>
+    <table class="course-table-link">
+        <tr>
+            <th>Subject</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td><a href="mathematics.html">
+                <button class="mathematics-btn">Mathematics</button>
+            </a></td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td><a href="science.html">
+                <button class="science">Science</button>
+            </a></td>
+        </tr>
+        <tr>
+            <td>Social Science</td>
+            <td><a href="social-science.html">
+                <button class="social-science-btn">Social Science</button>
+            </a></td>
+        </tr>
+    </table>
+    <br><br><br>
+    <a href="quiz.html">
+        <button class="quiz-button">Take Quiz</button>
+    </a>
+    <div id="loader">
+        <div class="loading-content">
+            <lottie-player src="images/Loading.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <p>Learnifying...</p>
+        </div>
+   </div>
+   <script src="courses.js"></script>
+</body>
+</html>

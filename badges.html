@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="badges.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <nav class="nav">
+        <h1 class="heading">Learnify</h1>
+        <a class="home" href="index.html">Home</a>
+        <a class="course" href="courses.html">Courses</a>
+        <a class="badge" href="badges.html">Badges</a>
+        <a class="announcements" href="announcements.html">Announcements</a>
+    </nav>
+    <h1 class="badges-head">The Badges Available</h1>
+    <br><br>
+    <table class="badge-table">
+        <tr>
+            <th>Badges</th>
+            <th>Name of the Badges</th>
+        </tr>
+        <tr>
+            <td><img src="images/Topic-completed-badge.jpeg"></td>
+            <td>Topic Completed<br><p>Description: You have completed a topic</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/Course-completed-badge.jpeg"></td>
+            <td>Course Completed<br><p>Description: You have completed a course</p></td>
+        </tr>
+        <tr>
+            <td><img src="images/Quiz-badge.jpeg"></td>
+            <td>Full Quiz Score<br><p>Description: You have scored full marks in a quiz</p></td>
+        </tr>
+    </table>
+    <br><br><br><br>
+    <h1 class="earned-badges-head">The Badges You Have Earned</h1>
+    <br><br>
+    <table class="earned-badge-table">
+        <tr>
+            <th>Badges You Have Earned</th>
+            <th>Badges You Have Not Earned</th>
+        </tr>
+        <tr>
+            <td class="topic-badge"><p>Not earned!</p></td>
+            <td class="topic-badge-earned"><img src="images/Topic-completed-badge.jpeg"></td>
+        </tr>
+        <tr>
+            <td class="course-badge"><p>Not earned!</p></td>
+            <td class="course-badge-earned"><img src="images/Course-completed-badge.jpeg"></td>
+        </tr>
+        <tr>
+            <td class="test-badge"><p>Not earned!</p></td>
+            <td class="test-badge-earned"><img src="images/Quiz-badge.jpeg"></td>
+        </tr>
+    </table>
+    <audio id="badgeSound" src="audio/Badge.mp3" preload="auto"></audio>
+    <div id="loader">
+        <div class="loading-content">
+            <lottie-player src="images/Loading.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <p>Learnifying...</p>
+        </div>
+   </div>
+    <script src="badges.js"></script>
+</body>
+</html>

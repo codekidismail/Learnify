@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <h1 class="heading">Learnify</h1>
+        <a class="home" href="index.html">Home</a>
+        <a class="course" href="courses.html">Courses</a>
+        <a class="badge" href="badges.html">Badges</a>
+        <a class="announcements" href="announcements.html">Announcements</a>
+    </nav>
+    <br><br><br>
+    <div class="introduction">
+        <div class="about-us">
+            <img class="au-img" src="images/Learnify-Logo.jpeg">
+            <h1 class="au-title">About Us:</h1>
+            <p class="au-para">Learnify is an interactive Learning Management System (LMS) website designed to make learning engaging, organized, and rewarding for students. It provides a digital platform where users can register or log in, access sample courses, and track their learning progress through animated progress bars and smooth transitions. Built using HTML, CSS, JavaScript, while JavaScript ensures proper form validation. The dashboard includes four main pages—Home, Courses, Badges, and Announcements. The Courses page features three sample courses with topics, quizzes, and completion buttons that dynamically update progress bars, while the Badges section rewards learners for completing content to encourage consistent participation. Additional features include a “Quote of the Day” or “Tip of the Week” and a scrolling Announcements Ticker displaying updates and messages. Overall, Learnify showcases the essential features of an LMS in a visually appealing way, combining interactivity, creativity, and technology to make learning smarter and more enjoyable.</p>
+        </div>
+        <br><br>
+    </div>
+    <div class="address-gmail">
+        <table class="adress/gmail table">
+            <tr>
+                <th style="background-color: #007BFF;">Our Address</th>
+                <th style="background-color: #007BFF;">Our Gmail</th>
+            </tr>
+            <tr>
+                <td><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d906.038684555805!2d46.67068151018451!3d24.721567390107758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssa!4v1762876199742!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                <td class="gmail">learnify49@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+    <table class="the-invisible-table" style="border: 1cm solid white;">
+        <tr>
+            <td><img src="images/Learnify International School.png" width="350" height="350" style="border-radius: 10px;"></td>
+            <td><img src="images/Students.png" width="350" height="250"></td>
+        </tr>
+    </table>
+    <div class="courses">
+        <h1>Courses</h1>
+        <p>Click here to start learning</p>
+        <a href="courses.html">
+            <button class="course-btn">Courses</button>
+        </a>
+    </div>
+    <div class="progress-section">
+        <h1 class="prog-heading">Progress</h1>
+        <p class="prog-p">of how much you have done!</p>
+        <table class="prog-table">
+            <tr>
+                <th>Subjects</th>
+                <th>Progress</th>
+            </tr>
+            <tr>
+                <td>Mathematics</td>
+                <td>
+                    <div class="progress">
+                        <div class="mathematics-prog-bar prog-bar"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>
+                    <div class="progress">
+                        <div class="science-prog-bar prog-bar"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Social Science</td>
+                <td>
+                    <div class="progress">
+                        <div class="social-prog-bar prog-bar"></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="loader">
+        <div class="loading-content">
+            <lottie-player src="images/Loading.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <p>Learnifying...</p>
+        </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>

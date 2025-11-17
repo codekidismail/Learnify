@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Quiz | Science</title>
+    <link rel="stylesheet" href="science-quiz.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="container">
+        <form class="science-quiz">
+            <h1 class="main-heading">Science Quiz</h1>
+            <h2 class="section">Section A - Multiple Choice Questions</h2>
+            <div class="MCQ">
+                <p>1. Which of the following best describes the investigative nature of science?</p>
+                <input type="radio" name="q1" value="Memorising scientific facts"> a. Memorising scientific facts<br>
+                <input type="radio" name="q1" value="Observing, experimenting, and explaining"> b. Observing, experimenting, and explaining<br>
+                <input type="radio" name="q1" value="Following fixed rules without questioning"> c. Following fixed rules without questioning<br>
+                <input type="radio" name="q1" value="Avoiding experiments"> d. Avoiding experiments<br>
+                <br>
+                <p>2. The root and kite symbols in the textbook represent:</p>
+                <input type="radio" name="q2" value="Power and magnetism"> a. Power and magnetism<br>
+                <input type="radio" name="q2" value="Curiosity and creativity"> b. Curiosity and creativity<br>
+                <input type="radio" name="q2" value="Grounded knowledge and soaring ideas"> c. Grounded knowledge and soaring ideas<br>
+                <input type="radio" name="q2" value="Air and soil"> d. Air and soil<br>
+                <br>
+                <p>3. The invention of the microscope helped humans</p>
+                <input type="radio" name="q3" value="Study stars and planets"> a. Study stars and planets<br>
+                <input type="radio" name="q3" value="See tiny living organisms invisible to the naked eye"> b. See tiny living organisms invisible to the naked eye<br>
+                <input type="radio" name="q3" value="Make powerful telescopes"> c. Make powerful telescopes<br>
+                <input type="radio" name="q3" value="Create stronger lenses for glasses"> d. Create stronger lenses for glasses<br>
+                <br>
+                <p>4. Who first observed and named the “cell”?</p>
+                <input type="radio" name="q4" value="Antonie van Leeuwenhoek"> a. Antonie van Leeuwenhoek<br>
+                <input type="radio" name="q4" value="Robert Hooke"> b. Robert Hooke<br>
+                <input type="radio" name="q4" value="Galileo Galilei"> c. Galileo Galilei<br>
+                <input type="radio" name="q4" value="Isaac Newton"> d. Isaac Newton<br>
+                <br>
+                <p>5. The “Father of Microbiology” is:</p>
+                <input type="radio" name="q5" value="Charles Darwin"> a. Charles Darwin<br>
+                <input type="radio" name="q5" value="Antonie van Leeuwenhoek"> b. Antonie van Leeuwenhoek<br>
+                <input type="radio" name="q5" value="Robert Hooke"> c. Robert Hooke<br>
+                <input type="radio" name="q5" value="Louis Pasteur"> d. Louis Pasteur<br>
+                <br>
+            </div>
+            <h2 class="section">Section B - True or False</h2>
+            <div class="TOFQ">
+                <p>6. Science is only about learning established facts.</p>
+                <input type="radio" name="q6" value="True"> True
+                <input type="radio" name="q6" value="False"> False
+                <br>
+                <p>7. Cells are the basic structural and functional units of life.</p>
+                <input type="radio" name="q7" value="True"> True
+                <input type="radio" name="q7" value="False"> False
+                <br>
+                <p>8. Viruses can multiply only inside living cells.</p>
+                <input type="radio" name="q8" value="True"> True
+                <input type="radio" name="q8" value="False"> False
+                <br>
+                <p>9. Non-communicable diseases spread through air and water.</p>
+                <input type="radio" name="q9" value="True"> True
+                <input type="radio" name="q9" value="False"> False
+                <br>
+                <p>10. Regular exercise and balanced diet prevent many lifestyle diseases.</p>
+                <input type="radio" name="q10" value="True"> True
+                <input type="radio" name="q10" value="False"> False
+                <br>
+            </div>
+            <h2 class="section">Section C - Fill in the Blanks</h2>
+            <div class="FITBQ">
+                <p>11. Investigation in science begins with asking <input type="text" name="q11"> questions.</p>
+                <br>
+                <p>12. A curved piece of glass that magnifies small objects is called a <input type="text" name="q12">.</p>
+                <br>
+                <p>13. The outermost layer of a plant cell is called the <input type="text" name="q13">.</p>
+                <br>
+                <p>14. Organisms made up of one cell are called <input type="text" name="q14">.</p>
+                <br>
+                <p>15. Diseases caused by microorganisms are called <input type="text" name="q15"> diseases.</p>
+                <br>
+            </div>
+        </form>
+    </div>
+    <button class="submit-btn">Submit Quiz</button>
+    <audio id="alertSound" src="audio/Alert.mp3" preload="auto"></audio>
+    <audio id="quizTime" src="audio/Quiz.mp3" preload="auto" loop></audio>
+    <div id="loader">
+        <div class="loading-content">
+            <lottie-player src="images/Loading.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <p>Learnifying...</p>
+        </div>
+   </div>
+    <script src="science-quiz.js"></script>
+</body>
+</html>
