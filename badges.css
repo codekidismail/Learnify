@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #222;
+}
+
+.nav {
+    background: linear-gradient(to right, #00C6FF, #0072FF);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.15);
+}
+
+.home {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s ease, 0.3s ease;
+}
+
+.course {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s ease, 0.3s ease;
+}
+
+.badge {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: color 0.2s ease, 0.3s ease;
+}
+
+.announcements {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s ease, 0.3s ease
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.badges-head, .earned-badges-head {
+    font-size: 4.2rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    margin-top: 10px;
+    color: #4c5fcb;
+}
+
+.nav a:hover {
+    transform: scale(1.05);
+}
+
+.badge-table, .earned-badge-table {
+    width: 82%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+th {
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+
+}
+
+td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+p {
+    padding: 15px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500; 
+}
+
+.badge-table td img {
+    width : 180px;
+    height: 180px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.badge-table td img:hover {
+    transform: scale(1.1);
+}
+
+.earned-badge-table td img {
+    width : 180px;
+    height: 180px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.earned-badge-table td img:hover {
+    transform: scale(1.1);
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+.loader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loader p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+#loader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
