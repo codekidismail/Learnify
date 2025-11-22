@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Science</title>
+    <link rel="stylesheet" href="science.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <nav class="science-nav">
+        <h1 class="heading">Learnify</h1>
+        <a href="courses.html">Back to Courses</a>
+    </nav>
+    <div class="science">
+        <h1 class="main-science-h1">Science Courses</h1>
+    </div>
+    <br><br>
+    <table class="science-table">
+        <tr>
+            <th>Chapters</th>
+            <th>PDF</th>
+            <th>Complete Topic</th>
+        </tr>
+        <tr>
+            <td>Chapter 1: Exploring the Investigative World of Science</td>
+            <td><a href="pdfs/hecu101.pdf" target="_blank">Exploring the Investigative World of Science</a></td>
+            <td><button class="complete-topic-btn" data-subject="science">Complete Topic</button></td>
+        </tr>
+        <tr>
+            <td>Chapter 2: The Invisible Living World: Beyond Our Naked Eye</td>
+            <td><a href="pdfs/hecu102.pdf" target="_blank">The Invisible Living World: Beyond Our Naked Eye</a></td>
+            <td><button class="complete-topic-btn" data-subject="science">Complete Topic</button></td>
+        </tr>
+        <tr>
+            <td>Chapter 3: Health: The Ultimate Treasure</td>
+            <td><a href="pdfs/hecu103.pdf" target="_blank">Health: The Ultimate Treasure</a></td>
+            <td><button class="complete-topic-btn" data-subject="science">Complete Topic</button></td>
+        </tr>
+        <tr>
+            <td>Chapter 4: Electricity: Magnetic and Heating Effects</td>
+            <td><a href="pdfs/hecu104.pdf" target="_blank">Electricity: Magnetic and Heating Effects</a></td>
+            <td><button class="complete-topic-btn" data-subject="science">Complete Topic</button></td>
+        </tr>
+    </table>
+    <audio id="alertSound" src="audio/Alert.mp3" preload="auto"></audio>
+    <div id="loader">
+        <div class="loading-content">
+            <lottie-player src="images/Loading.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+            <p>Learnifying...</p>
+        </div>
+   </div>
+    <script src="science.js"></script>
+</body>
+</html>
