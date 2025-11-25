@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sign-up.css" href="responsive/sign-up-responsive.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="sign-up">
+        <h1 class="topic">Sign Up</h1>
+        <form class="form">
+            First Name:        <input type="text" name="name" size="20" maxlength="20" placeholder="First Name"><br><br><br><br>
+            Last Name:         <input type="text" name="name" size="20" maxlength="20" placeholder="Last Name"><br><br><br><br>
+            Email adress:      <input class="email" type="email" name="email" size="20" maxlength="50" placeholder="Email"><br><br><br><br>
+            Phone number:      <input type="tel" name="tel" size="20" maxlength="20" placeholder="Phone Number"><br><br><br><br>
+            Username:          <input type="name" name="username" size="20" maxlength="20" placeholder="Username"><br><br><br><br>
+            Password:          <input type="password" name="password" size="20" maxlength="20" placeholder="Password"><br><br><br><br>
+            <a class="student-login-link" href="login.html">Already a student? Login now!</a>
+        </form>
+        <button class="button">Sign Up</button>
+        <audio id="alertSound" src="audio/Alert.mp3" preload="auto"></audio>
+        <div id="loader">
+            <div class="loading-content">
+                <lottie-player src="images/Loading.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+                <p>Learnifying...</p>
+            </div>
+        </div>
+    </div>
+   <script src="sign-up.js"></script>
+</body>
+</html>
